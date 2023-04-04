@@ -1,11 +1,9 @@
 import "./Banner.css"
 
-const Banner = () => {
+export const Banner = () => {
     return (
         <section className="banner">
             <img src="/img/banner.png" alt="banner principal" />
         </section>
     )
 }
-
-export default Banner;
