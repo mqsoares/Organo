@@ -4,7 +4,7 @@ import { Input } from "../InputsTxt"
 import { ListSelect } from "../ListSelect"
 import "./Form.css"
 
-export const Form = () => {
+export const Form = (props) => {
     
     const teams = [
         "",
@@ -25,6 +25,12 @@ export const Form = () => {
     const saveData = (e) => {
         e.preventDefault()
         console.log('salvou ---> ', name, post, image, team)
+        props.whenInsertPlayer({
+            name, 
+            post,
+            image,
+            team
+        })
     }
 
     return (
