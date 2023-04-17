@@ -6,10 +6,10 @@ import "./Form.css"
 
 export const Form = () => {
     
-    const times = [
+    const teams = [
         "",
         "Programação",
-        "Fornt-End",
+        "Front-End",
         "Data Science",
         "Devops",
         "UX e Design",
@@ -20,10 +20,11 @@ export const Form = () => {
     const [name, setName] = useState('')
     const [post, setPost] = useState('')
     const [image, setImage] = useState('')
+    const [team, setTeam] = useState('')
 
     const saveData = (e) => {
         e.preventDefault()
-        console.log('salvou ---> ', name, post, image)
+        console.log('salvou ---> ', name, post, image, team)
     }
 
     return (
@@ -50,7 +51,14 @@ export const Form = () => {
                 vl={image}
                 whenEdit={value => setImage(value)}
             />
-            <ListSelect reqField={true} name="Time" items={times} />
+            <ListSelect 
+                reqField={true} 
+                name="Time"
+                items={teams}
+                vl={team}
+                whenEdit={value => setTeam(value)}
+            />
+            
             <Button>
                 Criar card
             </Button>
