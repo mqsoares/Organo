@@ -1,0 +1,21 @@
+.select {
+    margin: 24px 0;
+}
+
+.sel-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #212121;
+}
+
+.sel-select {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
