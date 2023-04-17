@@ -1,3 +1,4 @@
+import { Button } from "../Button"
 import { Input } from "../InputsTxt"
 import { ListSelect } from "../ListSelect"
 import "./Form.css"
@@ -22,7 +23,10 @@ export const Form = () => {
             <Input name="Nome" placeholder="Digite seu nome" />
             <Input name="Cargo" placeholder="Digite seu cargo" />
             <Input name="Imagem" placeholder="Informe o endereço da imagem" />
-            <ListSelect name="time" items={times} />
+            <ListSelect name="Time" items={times} />
+            <Button>
+                Criar card
+            </Button>
             </form>
         </section>
     )
