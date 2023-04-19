@@ -6,16 +6,16 @@ import "./Form.css"
 
 export const Form = (props) => {
     
-    const teams = [
-        "",
-        "Programação",
-        "Front-End",
-        "Data Science",
-        "Devops",
-        "UX e Design",
-        "Mobile",
-        "Ivovação e Gestão"
-    ]
+    // const teams = [
+    //     "",
+    //     "Programação",
+    //     "Front-End",
+    //     "Data Science",
+    //     "Devops",
+    //     "UX e Design",
+    //     "Mobile",
+    //     "Ivovação e Gestão"
+    // ]
 
     const [name, setName] = useState('')
     const [post, setPost] = useState('')
@@ -60,7 +60,7 @@ export const Form = (props) => {
             <ListSelect 
                 reqField={true} 
                 name="Time"
-                items={teams}
+                items={props.teamsNames}
                 vl={team}
                 whenEdit={value => setTeam(value)}
             />
