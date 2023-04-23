@@ -53,7 +53,13 @@ function App() {
     <div className="App">
       <Banner />
       <Form teamsNames={teams.map(team => team.name)} whenInsertPlayer={player => newInsertPlayer(player)}/>
-      {teams.map(team => <Team key={team.name} teamName={team.name} colorPrimary={team.colorPrimary} colorSecondary={team.colorSecondary} />)}
+      {teams.map(team => <Team 
+        key={team.name} 
+        teamName={team.name} 
+        colorPrimary={team.colorPrimary} 
+        colorSecondary={team.colorSecondary}
+        players={players.filter(player => player.team === team.name)}
+      />)}
     </div>
   );
 }

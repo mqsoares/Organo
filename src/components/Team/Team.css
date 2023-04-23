@@ -13,3 +13,10 @@
     display: inline-block;
     padding-bottom: 8px;
 }
+
+.team .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
