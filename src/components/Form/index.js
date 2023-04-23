@@ -31,6 +31,10 @@ export const Form = (props) => {
             image,
             team
         })
+        setName('')
+        setPost('')
+        setImage('')
+        setTeam('')
     }
 
     return (

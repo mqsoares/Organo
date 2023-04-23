@@ -3,10 +3,10 @@ import './Team.css'
 
 export const Team = (props) => {
     return (
-        <section className='team' style={{backgroundColor: props.colorSecondary}}>
+        props.players.length > 0 && <section className='team' style={{backgroundColor: props.colorSecondary}}>
             <h3 style={{borderBottomColor: props.colorPrimary}}>{props.teamName}</h3>
             <div className='cards'>
-                {props.players.map( player => <Player name={player.name} post={player.post} image={player.image} />)}
+                {props.players.map( player => <Player key={player.name} name={player.name} post={player.post} image={player.image} />)}
             </div>
         </section>
     )

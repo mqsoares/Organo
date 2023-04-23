@@ -10,6 +10,7 @@ export const ListSelect = (props) => {
                 value={props.vl}
                 onChange={e => props.whenEdit(e.target.value)}
             > 
+                <option value=""></option>
                 {props.items.map(item => <option key={item}>{item}</option>
                 )}
             </select>

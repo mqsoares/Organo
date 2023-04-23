@@ -45,7 +45,7 @@ function App() {
   const [players, setPlayers] = useState([])
 
   const newInsertPlayer = (player) => {
-    console.log(player)
+    // console.log(player)
     setPlayers([...players, player])
   }
   
